@@ -30,10 +30,10 @@ export default function ProfileModal({ visible, profileId, onClose }) {
     <ModalContainer visible={visible} onClose={onClose} ignoreContainer>
       <div className="w-72 p-5 rounded flex flex-col items-center bg-custom-gray dark:bg-primary space-y-3">
         <img className="w-28 h-28 rounded-full" src={profile} alt="" />
-        <h1 className="dark:text-custom-gray text-primary font-semibold">
+        <h1 className="dark:text-custom-gold text-custom-gold font-semibold font-mono">
           {name}
         </h1>
-        <p className="dark:text-dark-subtle text-light-subtle">{about}</p>
+        <p className="dark:text-custom-gray text-primary">{about}</p>
       </div>
     </ModalContainer>
   );
