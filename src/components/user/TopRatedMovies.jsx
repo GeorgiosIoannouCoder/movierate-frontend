@@ -7,8 +7,6 @@ export default function TopRatedMovies() {
   const [movies, setMovies] = useState([]);
   const { updateNotification } = useNotification();
 
-  console.log(movies);
-
   const fetchMovies = async (signal) => {
     const { error, movies } = await getTopRatedMovies("Movie", signal);
 

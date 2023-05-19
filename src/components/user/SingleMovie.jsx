@@ -95,7 +95,6 @@ export default function SingleMovie() {
       if (!api && streamingTitle && streamingType) {
         // Search for the movie title and get the Watchmode ID.
         const searchResponse = await axios.request(searchOptions);
-        console.log(streamingType);
         const watchmodeId = searchResponse.data.title_results[0].id;
 
         // Get the streaming services for the movie using the Watchmode ID.
