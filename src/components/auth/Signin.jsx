@@ -80,11 +80,11 @@ export default function Signin() {
   };
 
   const googleLogin = () => {
-    window.open("http://localhost:8000/auth/google", "_self");
+    window.open("https://movierate.tv/auth/google", "_self");
   };
 
   const githubLogin = () => {
-    window.open("http://localhost:8000/auth/github", "_self");
+    window.open("https://movierate.tv/auth/github", "_self");
   };
 
   const handleChange = ({ target }) => {
