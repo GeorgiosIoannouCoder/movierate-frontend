@@ -168,7 +168,7 @@ export default function Signin() {
           </div>
 
           <p className="text-center text-xl text-red-600  dark:text-red font-mono font-bold">
-            <a href="mailto:verification@movierate.com">Become Admin</a>
+            <a href="mailto:gioanno000@citymail.cuny.edu">Become Admin</a>
           </p>
         </form>
       </Container>
