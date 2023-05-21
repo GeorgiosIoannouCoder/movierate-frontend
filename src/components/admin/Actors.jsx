@@ -127,7 +127,7 @@ export default function Actors() {
           <AppSearchForm
             onReset={handleSearchFormReset}
             onSubmit={handleOnSearchSubmit}
-            placeholder="Search Actors..."
+            placeholder="Search Actors"
             showResetIcon={results.length || resultNotFound}
           />
         </div>
