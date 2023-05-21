@@ -15,7 +15,7 @@ export default function DirectorsModal({
           return (
             <div
               key={id}
-              className="flex space-x-3 dark:bg-secondary bg-custom-gray drop-shadow-md rounded"
+              className="flex space-x-3 dark:bg-secondary bg-white drop-shadow-md rounded"
             >
               <img
                 className="w-16 h-16 aspect-square rounded object-cover"
