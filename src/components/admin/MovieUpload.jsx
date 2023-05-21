@@ -98,7 +98,11 @@ export default function MovieUpload({ visible, onClose }) {
           handleChange={handleChange}
         />
       ) : (
-        <MovieForm busy={busy} onSubmit={!busy ? handleSubmit : null} />
+        <MovieForm
+          busy={busy}
+          onSubmit={!busy ? handleSubmit : null}
+          btnTitle="Submit"
+        />
       )}
     </ModalContainer>
   );
