@@ -31,7 +31,7 @@ export default function Navbar() {
                 className="p-1 rounded sm:text-2xl text-lg"
               >
                 <BsFillMoonStarsFill
-                  className="dark:bg-secondary bg-white dark:text-custom-gold text-primary"
+                  className="dark:bg-secondary bg-white dark:text-custom-gold"
                   size={24}
                 />
               </button>
@@ -39,7 +39,7 @@ export default function Navbar() {
             <li>
               <AppSearchForm
                 placeholder="Search"
-                styleClassName="border-dark-subtle dark:text-custom-gray text-primary focus:border-primary hover:border-primary dark:focus:border-custom-gold dark:hover:border-custom-gold s:w-auto w-40 sm:text-lg rounded-3xl"
+                styleClassName="border-dark-subtle dark:text-custom-gray text-mono focus:border-custom-gold hover:border-custom-gold dark:focus:border-custom-gold dark:hover:border-custom-gold s:w-auto w-40 sm:text-lg rounded-3xl"
                 onSubmit={handleSeachSubmit}
               />
             </li>
