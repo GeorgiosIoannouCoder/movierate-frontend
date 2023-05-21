@@ -326,13 +326,17 @@ export default function MovieForm({ busy, btnTitle, initialState, onSubmit }) {
             <CastForm onSubmit={updateCast} />
           </div>
 
-          <input
-            type="date"
-            className={commonInputClasses + " border-2 rounded p-1 w-auto"}
-            onChange={handleChange}
-            name="releaseDate"
-            value={releaseDate}
-          />
+          <div>
+            <Label htmlFor="releaseDate">Release Date</Label>
+            <br />
+            <input
+              type="date"
+              className={commonInputClasses + " border-2 rounded p-1 w-auto"}
+              onChange={handleChange}
+              name="releaseDate"
+              value={releaseDate}
+            />
+          </div>
 
           <Submit
             busy={busy}
