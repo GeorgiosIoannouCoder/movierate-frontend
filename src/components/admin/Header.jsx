@@ -36,7 +36,10 @@ export default function Header({ onAddActorClick, onAddMovieClick }) {
           onClick={toggleTheme}
           className="dark:text-custom-gray text-light-subtle"
         >
-          <BsFillMoonStarsFill size={24} />
+          <BsFillMoonStarsFill
+            size={24}
+            className="dark:text-custom-gray text-primary"
+          />
         </button>
 
         <button
