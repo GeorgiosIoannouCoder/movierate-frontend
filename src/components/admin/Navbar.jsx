@@ -36,28 +36,28 @@ export default function Navbar() {
               <img src="./logo.png" alt="logo" className="h-14 p-2" />
             </Link>
           </li>
-          <NavItem to="/">
+          <NavItem to="/" setMenuOpen={setMenuOpen}>
             <AiOutlineHome className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Home
             </span>
           </NavItem>
 
-          <NavItem to="/movies">
+          <NavItem to="/movies" setMenuOpen={setMenuOpen}>
             <BiCameraMovie className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Movies
             </span>
           </NavItem>
 
-          <NavItem to="/actors">
+          <NavItem to="/actors" setMenuOpen={setMenuOpen}>
             <FaTheaterMasks className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Actors
             </span>
           </NavItem>
 
-          <NavItem to="/users">
+          <NavItem to="/users" setMenuOpen={setMenuOpen}>
             <AiOutlineUser className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Users
@@ -79,15 +79,21 @@ export default function Navbar() {
   );
 }
 
-const NavItem = ({ children, to }) => {
+const NavItem = ({ children, to, setMenuOpen }) => {
   const commonClasses =
     " flex items-center text-lg space-x-2 p-2 hover:opacity-80";
+
+  const handleClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <NavLink
       className={({ isActive }) =>
         (isActive ? "text-custom-gray" : "text-gray-400") + commonClasses
       }
       to={to}
+      onClick={handleClick}
     >
       {children}
     </NavLink>
