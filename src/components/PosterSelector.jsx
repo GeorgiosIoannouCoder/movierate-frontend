@@ -1,7 +1,7 @@
 import React from "react";
 
 const commonPosterUI =
-  "flex justify-center items-center border border-dashed rounded aspect-video dark:border-dark-subtle border-light-subtle cursor-pointer";
+  "flex justify-center items-center border border-dashed rounded aspect-video dark:border-custom-gray border-primary cursor-pointer";
 
 export default function PosterSelector({
   name,
@@ -39,7 +39,7 @@ export default function PosterSelector({
 const PosterUI = ({ label, className }) => {
   return (
     <div className={commonPosterUI + " " + className}>
-      <span className="dark:text-custom-gray text-primary">{label}</span>
+      <span className="dark:text-custom-gray text-primary ">{label}</span>
     </div>
   );
 };
