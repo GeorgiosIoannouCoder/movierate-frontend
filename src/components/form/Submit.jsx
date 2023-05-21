@@ -11,9 +11,10 @@ export default function Submit({
   return (
     <button
       type={type || "submit"}
-      className="w-full rounded dark:bg-custom-gray bg-secondary dark:text-secondary text-custom-gray hover:bg-opacity-90 transition font-semibold text-lg cursor-pointer h-10 flex items-center justify-center"
+      className="w-full rounded-lg dark:bg-custom-gray bg-primary dark:text-primary text-custom-gray hover:bg-opacity-90 transition font-mono font-bold text-lg cursor-pointer h-10 flex items-center justify-center"
       disabled={isButtonDisabled}
       onClick={onClick}
+      placeholder="Submit"
     >
       {busy ? <ImSpinner8 className="animate-spin" /> : value}
     </button>
