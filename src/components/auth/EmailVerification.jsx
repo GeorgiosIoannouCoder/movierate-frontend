@@ -135,7 +135,7 @@ export default function EmailVerification() {
         <form onSubmit={handleSubmit} className={commonModalClasses}>
           <div>
             <Title>Please enter the OTP to verify your account</Title>
-            <p className="text-center dark:text-dark-subtle text-light-subtle">
+            <p className="text-center dark:text-white text-secondary">
               OTP token has been sent to your email!
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function EmailVerification() {
             <button
               onClick={handleOTPResend}
               type="button"
-              className="dark:text-custom-gray text-blue-600 font-semibold font-mono hover:underline mt-2"
+              className="dark:text-custom-gold text-custom-gold font-semibold font-mono hover:underline mt-2"
             >
               Request OTP
             </button>
