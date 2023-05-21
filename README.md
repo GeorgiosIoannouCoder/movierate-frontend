@@ -125,7 +125,7 @@
 
 ## Getting Started
 
-**To get a local copy of MovieRate up and running follow these simple example steps:**
+**To get a local copy of MovieRate up and running locally follow these simple example steps:**
 
 ### Prerequisites
 
@@ -170,7 +170,7 @@
 
 1. Get a free Streaming Availability API Key at [https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability). (for getting Streaming Services)
 
-1. Get a free Mailtap API Username and Password at [https://mailtrap.io/signin](https://mailtrap.io/signin). (for sending emails during production. Use Brevo for deployment)
+1. Get a free Mailtap API Username and Password at [https://mailtrap.io/signin](https://mailtrap.io/signin). (for sending emails during production. Switch to **Brevo** for deployment.)
 
 1. Get a free Cloudinary Username, API Key, and API Secret at [https://cloudinary.com](https://cloudinary.com). (for uploading and storing images and videos)
 
