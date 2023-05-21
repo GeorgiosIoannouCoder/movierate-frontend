@@ -13,7 +13,7 @@ export default function LatestUploads() {
 
   return (
     <>
-      <div className="bg-white shadow dark:shadow dark:bg-secondary p-5 rounded md:col-span-2">
+      <div className="bg-white shadow dark:shadow dark:bg-secondary p-5 rounded md:col-span-2 w-full sm:w-auto">
         <h1 className="font-semibold text-2xl mb-2 text-primary dark:text-custom-gray font-mono">
           Recent Uploads
         </h1>
