@@ -10,8 +10,8 @@ import { useAuth } from "../../hooks";
 export default function Navbar() {
   const { handleLogout } = useAuth();
   return (
-    <nav className="w-48 min-h-screen bg-secondary border-r border-gray-300">
-      <div className="flex flex-col justify-between pl-5 h-screen sticky top-0">
+    <nav className="w-48 min-h-screen dark:bg-secondary bg-white border-r border-highlight">
+      <div className="flex flex-col justify-between pl-5 h-screen sticky top-0 dark:text-custom-gray text-primary font-mono">
         <ul>
           <li className="mb-8">
             <Link to="/">
@@ -20,35 +20,45 @@ export default function Navbar() {
           </li>
           <li>
             <NavItem to="/">
-              <AiOutlineHome />
-              <span>Home</span>
+              <AiOutlineHome className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
+              <span className="dark:text-custom-gray text-primary font-mono">
+                Home
+              </span>
             </NavItem>
           </li>
           <li>
             <NavItem to="/movies">
-              <BiCameraMovie />
-              <span>Movies</span>
+              <BiCameraMovie className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
+              <span className="dark:text-custom-gray text-primary font-mono">
+                Movies
+              </span>
             </NavItem>
           </li>
           <li>
             <NavItem to="/actors">
-              <FaTheaterMasks />
-              <span>Actors</span>
+              <FaTheaterMasks className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
+              <span className="dark:text-custom-gray text-primary font-mono">
+                Actors
+              </span>
             </NavItem>
             <NavItem to="/users">
-              <AiOutlineUser />
-              <span>Users</span>
+              <AiOutlineUser className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
+              <span className="dark:text-custom-gray text-primary font-mono">
+                Users
+              </span>
             </NavItem>
           </li>
         </ul>
         <div className="flex flex-col items-start pb-5">
-          <span className="font-semibold text-custom-gray text-xl">Admin</span>
+          <span className="font-semibold font-mono dark:text-custom-gray text-primary text-xl">
+            Admin
+          </span>
           <button
             onClick={handleLogout}
-            className="flex items-center dark:text-custom-gray text-primary text-sm hover:text-red-600 dark:hover:text-red-600 transition space-x-1"
+            className="font-mono flex items-center dark:text-custom-gray text-primary text-sm hover:text-red-600 dark:hover:text-red-600 transition space-x-1"
           >
             <FiLogOut />
-            <span>Log out</span>
+            <span>Logout</span>
           </button>
         </div>
       </div>

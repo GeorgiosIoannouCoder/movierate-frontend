@@ -49,7 +49,7 @@ export default function Navbar() {
                   onClick={handleLogout}
                   className="dark:text-custom-gray text-primary font-semibold text-lg font-mono"
                 >
-                  Log out
+                  Logout
                 </button>
               ) : (
                 <Link
