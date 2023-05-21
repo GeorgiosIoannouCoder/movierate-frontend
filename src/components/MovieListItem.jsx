@@ -73,7 +73,7 @@ const MovieCard = ({ movie, onDeleteClick, onEditClick }) => {
     <div className="w-full border-b p-3 flex flex-col sm:flex-row sm:space-x-5">
       <div className="w-full sm:w-1/4 mb-5 sm:mb-0">
         <img
-          className="w-40 aspect-video sm:h-20 md:h-30 lg:h-50 object-cover"
+          className="w-40 aspect-video sm:h-20 md:h-30 lg:h-55 object-cover"
           src={getPoster(responsivePosters) || poster}
           alt={title}
         />
