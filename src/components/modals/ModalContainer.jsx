@@ -18,7 +18,7 @@ export default function ModalContainer({
     }
 
     return (
-      <div className="dark:bg-primary bg-custom-gray rounded w-[45rem] h-[40rem] overflow-auto p-2 custom-scroll-bar">
+      <div className="dark:bg-primary bg-custom-gray rounded w-full md:w-[45rem] h-full md:h-[40rem] overflow-auto p-2 custom-scroll-bar">
         {children}
       </div>
     );

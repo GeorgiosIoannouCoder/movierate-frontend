@@ -250,8 +250,11 @@ export default function MovieForm({ busy, btnTitle, initialState, onSubmit }) {
   } = movieInfo;
   return (
     <>
-      <div onSubmit={handleSubmit} className="flex space-x-3">
-        <div className="w-[70%] space-y-5">
+      <div
+        onSubmit={handleSubmit}
+        className="flex space-x-3 md:space-x-6 lg:space-x-8"
+      >
+        <div className="w-full sm:w-[70%] space-y-5">
           <div>
             <Label htmlFor="title">Title</Label>
             <input
@@ -261,7 +264,8 @@ export default function MovieForm({ busy, btnTitle, initialState, onSubmit }) {
               name="title"
               type="text"
               className={
-                commonInputClasses + " border-b-2 font-semibold text-xl"
+                commonInputClasses +
+                " border-b-2 font-semibold text-xl sm:text-2xl"
               }
               placeholder="Title"
             />
@@ -274,7 +278,9 @@ export default function MovieForm({ busy, btnTitle, initialState, onSubmit }) {
               onChange={handleChange}
               name="storyLine"
               id="storyLine"
-              className={commonInputClasses + " border-b-2 resize-none h-24"}
+              className={
+                commonInputClasses + " border-b-2 resize-none h-24 sm:h-32"
+              }
               placeholder="Storyline"
             ></textarea>
           </div>
@@ -345,15 +351,22 @@ export default function MovieForm({ busy, btnTitle, initialState, onSubmit }) {
             type="button"
           />
         </div>
-        <div className="w-[30%] space-y-5">
+
+        <div className="w-full sm:w-[30%] space-y-5">
           <PosterSelector
             name="poster"
             onChange={handleChange}
             selectedPoster={selectedPosterForUI}
             lable="Poster"
             accept="image/jpg, image/jpeg, image/png"
+            className="w-full sm:w-auto"
           />
-          <GenresSelector badge={genres.length} onClick={displayGenresModal} />
+
+          <GenresSelector
+            badge={genres.length}
+            onClick={displayGenresModal}
+            className="text-base sm:text-lg"
+          />
 
           <Selector
             onChange={handleChange}
