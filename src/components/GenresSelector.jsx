@@ -15,7 +15,7 @@ export default function GenresSelector({ badge, onClick }) {
     <button
       type="button"
       onClick={onClick}
-      className="relative flex items-center space-x-2 py-1 px-3 border-2 dark:border-custom-gray border-primary dark:hover:border-custom-gold hover:border-custom-gray transition dark:text-custom-gray text-primary dark:hover:text-green-300 hover:text-green-300 rounded"
+      className="relative flex items-center space-x-2 py-1 px-3 border-2 dark:border-custom-gray border-primary dark:hover:border-custom-gold hover:border-custom-gold transition dark:text-custom-gray text-primary dark:hover:text-green-300 hover:text-green-600 rounded-lg"
     >
       <ImTree />
       <span>Select Genres</span>
