@@ -67,59 +67,50 @@ const MovieListItem = ({ movie, afterDelete, afterUpdate }) => {
   );
 };
 
-const MovieCard = ({ movie, onDeleteClick, onEditClick, onOpenClick }) => {
+const MovieCard = ({ movie, onDeleteClick, onEditClick }) => {
   const { poster, title, responsivePosters, genres = [], status } = movie;
   return (
-    <table className="w-full border-b">
-      <tbody>
-        <tr>
-          <td>
-            <div className="w-24">
-              <img
-                className="w-full aspect-video"
-                src={getPoster(responsivePosters) || poster}
-                alt={title}
-              />
-            </div>
-          </td>
+    <div className="w-full border-b p-3 flex flex-col sm:flex-row sm:space-x-5">
+      <div className="w-full sm:w-1/4 mb-5 sm:mb-0">
+        <img
+          className="w-40 aspect-video sm:h-20 md:h-30 lg:h-50 object-cover"
+          src={getPoster(responsivePosters) || poster}
+          alt={title}
+        />
+      </div>
 
-          <td className="w-full pl-5">
-            <div>
-              <h1 className="text-lg font-semibold text-primary dark:text-custom-gray">
-                {title}
-              </h1>
-              <div className="space-x-1">
-                {genres.map((g, index) => {
-                  return (
-                    <span
-                      key={g + index}
-                      className=" text-primary dark:text-custom-gray text-xs"
-                    >
-                      {g}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-          </td>
+      <div className="w-full sm:w-3/4 flex flex-col justify-between">
+        <div>
+          <h1 className="text-lg font-semibold text-primary dark:text-custom-gray sm:text-xl md:text-2xl lg:text-3xl mb-3">
+            {title}
+          </h1>
+          <div className="space-x-1 mb-3">
+            {genres.map((g, index) => {
+              return (
+                <span
+                  key={g + index}
+                  className="text-primary dark:text-custom-gray text-xs sm:text-sm md:text-base lg:text-lg"
+                >
+                  {g}
+                </span>
+              );
+            })}
+          </div>
+          <p className="text-primary dark:text-custom-gray sm:text-sm md:text-base lg:text-lg mb-3">
+            {status}
+          </p>
+        </div>
 
-          <td className="px-5">
-            <p className="text-primary dark:text-custom-gray">{status}</p>
-          </td>
-
-          <td>
-            <div className="flex items-center space-x-3 text-primary dark:text-custom-gray text-lg">
-              <button onClick={onDeleteClick} type="button">
-                <BsTrash />
-              </button>
-              <button onClick={onEditClick} type="button">
-                <BsPencilSquare />
-              </button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <div className="flex items-center space-x-3 text-primary dark:text-custom-gray text-lg sm:text-xl md:text-2xl lg:text-3xl">
+          <button onClick={onDeleteClick} type="button">
+            <BsTrash />
+          </button>
+          <button onClick={onEditClick} type="button">
+            <BsPencilSquare />
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 
