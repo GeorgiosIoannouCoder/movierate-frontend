@@ -127,7 +127,7 @@ export default function Users() {
           <AppSearchForm
             onReset={handleSearchFormReset}
             onSubmit={handleOnSearchSubmit}
-            placeholder="Search Users..."
+            placeholder="Search Users"
             showResetIcon={results.length || resultNotFound}
           />
         </div>
