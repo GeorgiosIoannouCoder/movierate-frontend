@@ -17,9 +17,6 @@ export default function Navbar() {
   return (
     <>
       <div className="md:hidden flex items-center justify-between bg-white dark:bg-secondary w-full p-4">
-        <Link to="/">
-          <img src="./logo.png" alt="logo" className="h-10" />
-        </Link>
         <button onClick={() => setMenuOpen(!menuOpen)} className="text-xl">
           {menuOpen ? (
             <AiOutlineClose className="dark:text-custom-gray text-primary" />
@@ -34,43 +31,49 @@ export default function Navbar() {
         } md:flex w-full md:w-48 md:min-h-screen md:border-r border-highlight md:static dark:bg-secondary bg-white flex-col justify-between pl-5 h-screen sticky top-0 dark:text-custom-gray text-primary font-mono`}
       >
         <ul className="flex flex-col space-y-4 md:space-y-0 md:space-x-8">
+          <li className="mb-8">
+            <Link to="/">
+              <img src="./logo.png" alt="logo" className="h-14 p-2" />
+            </Link>
+          </li>
           <NavItem to="/">
             <AiOutlineHome className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Home
             </span>
           </NavItem>
+
           <NavItem to="/movies">
             <BiCameraMovie className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Movies
             </span>
           </NavItem>
+
           <NavItem to="/actors">
             <FaTheaterMasks className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Actors
             </span>
           </NavItem>
+
           <NavItem to="/users">
             <AiOutlineUser className="dark:text-custom-gray text-primary font-mono hover:text-red-600" />
             <span className="dark:text-custom-gray text-primary font-mono">
               Users
             </span>
           </NavItem>
+
+          <div className="pl-3">
+            <button
+              onClick={handleLogout}
+              className="font-mono flex items-center dark:text-custom-gray text-primary text-lg hover:text-red-600 dark:hover:text-red-600 transition space-x-1"
+            >
+              <FiLogOut />
+              <span>Logout</span>
+            </button>
+          </div>
         </ul>
-        <div className="flex flex-col items-start pb-5">
-          <span className="font-semibold font-mono dark:text-custom-gray text-primary text-xl">
-            Admin
-          </span>
-          <button
-            onClick={handleLogout}
-            className="font-mono flex items-center dark:text-custom-gray text-primary text-sm hover:text-red-600 dark:hover:text-red-600 transition space-x-1"
-          >
-            <FiLogOut />
-            <span>Logout</span>
-          </button>
-        </div>
       </nav>
     </>
   );
