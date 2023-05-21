@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
 
+***NOTE: This is the frontend of the MovieRate! Please visit the backend [here](https://github.com/GeorgiosIoannouCoder/movierate-backend)!***
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
