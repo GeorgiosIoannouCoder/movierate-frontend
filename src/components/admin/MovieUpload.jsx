@@ -139,7 +139,7 @@ const UploadProgress = ({ width, message, visible }) => {
           className="h-full absolute left-0 dark:bg-custom-gray bg-primary"
         />
       </div>
-      <p className="font-semibold dark:text-custom-gray text-primary animate-pulse mt-1">
+      <p className="font-semibold dark:text-primary text-custom-gray animate-pulse mt-1">
         {message}
       </p>
     </div>
