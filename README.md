@@ -352,7 +352,7 @@ Project Link: [https://github.com/GeorgiosIoannouCoder/movierate-frontend](https
 [linkedin-url]: https://linkedin.com/in/georgiosioannoucoder
 
 [github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=for-the-badge&logo=github&colorB=000
-[github-url]: ttps://github.com/GeorgiosIoannouCoder/
+[github-url]: https://github.com/GeorgiosIoannouCoder/
 
 [product-screenshot]: /public/logo.png
 
