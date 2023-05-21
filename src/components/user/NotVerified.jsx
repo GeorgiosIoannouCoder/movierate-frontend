@@ -18,11 +18,11 @@ export default function NotVerified() {
   return (
     <div>
       {isLoggedIn && !isVerified ? (
-        <p className="text-lg text-center bg-orange-200 p-2">
+        <p className="text-lg text-center dark:bg-orange-500 bg-orange-300 p-2 font-mono">
           It looks like you haven not verified your account!{" "}
           <button
             onClick={navigateToVerification}
-            className="text-red-600 font-semibold font-mono hover:underline"
+            className="dark:text-custom-gray text-white font-semibold hover:underline font-mono"
           >
             Click here to verify your account!
           </button>

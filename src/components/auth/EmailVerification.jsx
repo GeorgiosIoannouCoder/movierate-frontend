@@ -135,7 +135,7 @@ export default function EmailVerification() {
         <form onSubmit={handleSubmit} className={commonModalClasses}>
           <div>
             <Title>Please enter the OTP to verify your account</Title>
-            <p className="text-center dark:text-white text-secondary">
+            <p className="text-center dark:text-white text-secondary font-mono">
               OTP token has been sent to your email!
             </p>
           </div>
@@ -150,7 +150,7 @@ export default function EmailVerification() {
                   value={otp[index] || ""}
                   onChange={handleOtpChange}
                   onKeyDown={(e) => handleKeyDown(e, index)}
-                  className="w-12 h-12 border-2 dark:border-custom-gray  border-primary dark:focus:border-custom-gray focus:border-primary rounded bg-transparent outline-none text-center dark:text-custom-gray text-primary font-semibold fonlt-mono text-xl spin-button-none"
+                  className="w-12 h-12 border-2 dark:border-custom-gray  border-primary dark:focus:border-custom-gray focus:border-primary rounded bg-transparent outline-none text-center dark:text-custom-gray text-primary font-semibold font-mono text-xl spin-button-none"
                 />
               );
             })}
