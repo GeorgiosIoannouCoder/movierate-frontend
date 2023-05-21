@@ -122,7 +122,7 @@ export default function ActorForm({
           {title}
         </h1>
         <button
-          className="h-8 w-24 bg-primary text-custom-gray dark:bg-custom-gray dark:text-primary hover:opacity-80 transition rounded flex items-center justify-center"
+          className="h-8 w-24 bg-secondary text-custom-gray dark:bg-custom-gray dark:text-secondary hover:opacity-80 transition rounded flex items-center justify-center"
           type="submit"
         >
           {busy ? <ImSpinner3 className="animate-spin" /> : btnTitle}
