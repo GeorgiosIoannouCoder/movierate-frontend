@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsTrash, BsPencilSquare, BsBoxArrowUpRight } from "react-icons/bs";
+import { BsTrash, BsPencilSquare } from "react-icons/bs";
 import { deleteMovie } from "../api/movie";
 import { useNotification } from "../hooks";
 import { getPoster } from "../utils/helper";
@@ -114,9 +114,6 @@ const MovieCard = ({ movie, onDeleteClick, onEditClick, onOpenClick }) => {
               </button>
               <button onClick={onEditClick} type="button">
                 <BsPencilSquare />
-              </button>
-              <button onClick={onOpenClick} type="button">
-                <BsBoxArrowUpRight />
               </button>
             </div>
           </td>
