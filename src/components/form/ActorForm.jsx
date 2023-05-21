@@ -132,7 +132,7 @@ export default function ActorForm({
       <div className="flex space-x-2">
         <PosterSelector
           selectedPoster={selectedProfileForUI}
-          className="w-36 h-36 aspect-square object-cover"
+          className="w-36 h-36 aspect-square object-cover font-mono"
           name="profile"
           onChange={handleChange}
           lable="Select profile"
@@ -143,7 +143,7 @@ export default function ActorForm({
           <input
             placeholder="Name"
             type="text"
-            className={commonInputClasses + " border-b-2"}
+            className={commonInputClasses + "border-b-2 font-mono"}
             name="name"
             value={name}
             onChange={handleChange}
@@ -154,7 +154,9 @@ export default function ActorForm({
             value={about}
             onChange={handleChange}
             placeholder="About"
-            className={commonInputClasses + " border-b-2 resize-none h-full"}
+            className={
+              commonInputClasses + " border-b-2 resize-none h-full font-mono"
+            }
           ></textarea>
         </div>
       </div>
