@@ -208,7 +208,7 @@ const UserProfile = ({ profilee, onEditClick, onDeleteClick }) => {
   }
 
   return (
-    <div className="bg-custom-gray shadow dark:shadow dark:bg-secondary rounded h-20 overflow-hidden">
+    <div className="bg-white shadow dark:shadow dark:bg-secondary rounded h-20 overflow-hidden">
       <div
         onMouseEnter={handleOnMouseEnter}
         onMouseLeave={handleOnMouseLeave}
