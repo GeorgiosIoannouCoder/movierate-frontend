@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 const style =
-  "dark:border-dark-subtle border-light-subtle dark:focus:border-custom-gray focus:border-primary dark:text-custom-gray text-lg rounded-3xl dark:border-custom-gray border-primary";
+  "text-primary dark:focus:text-custom-gold focus:text-custom-gold dark:text-custom-gray text-lg font-mono rounded-3xl dark:border-custom-gold border-custom-gold";
 
 export default function AppSearchForm({
   showResetIcon,
@@ -28,7 +28,7 @@ export default function AppSearchForm({
       <input
         type="text"
         className={
-          "border-2 transition bg-transparent rounded text-lg p-1 outline-none" +
+          "border-2 transition bg-transparent rounded p-1 outline-2" +
           styleClassName
         }
         placeholder={placeholder}
