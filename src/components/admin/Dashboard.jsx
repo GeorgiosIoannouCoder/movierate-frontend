@@ -29,7 +29,7 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-5 p-5">
+    <div className="grid grid-cols-3 gap-5 p-5 font-mono">
       <AppInfoBox
         title="Uploads"
         subTitle={appInfo.movieCount.toLocaleString()}
