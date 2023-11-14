@@ -92,7 +92,7 @@
 11. **Create actors.**
 12. **Give the ability to users to become Admins and contribute to the open soruce moview review platform MovieRate.**
 13. **Third-party Authentication using Passport.js for Google and GitHub.**
-14. **Fully functional and responsive web application with the main focus on desktops, mobile devices, and tables.**
+14. **Fully functional and responsive web application with the main focus on desktops, mobile devices, and tablets.**
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
