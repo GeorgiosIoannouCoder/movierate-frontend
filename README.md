@@ -42,7 +42,7 @@
       <ul>
         <li><a href="#key-features">Key Features</a></li>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#databse-er-diagram">Database ER-Diagram</a></li>
+        <li><a href="#database-er-diagram">Database ER-Diagram</a></li>
         <li><a href="#architecture">Architecture</a></li>
       </ul>
     </li>
