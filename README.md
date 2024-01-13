@@ -42,6 +42,8 @@
       <ul>
         <li><a href="#key-features">Key Features</a></li>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#databse-er-diagram">Database ER-Diagram</a></li>
+        <li><a href="#architecture">Architecture</a></li>
       </ul>
     </li>
     <li>
@@ -75,10 +77,10 @@
     - Include the genres.
     - Insert language.
     - Insert film rating.
-    - Edit a movie or series.
+    - Update a movie or series.
     - Delete a movie or series.
-    - Add actors.
-    - Edit actors.
+    - Create actors.
+    - Update actors.
     - Delete actors.
 2. **Allow movies and series to be featured on the carousel of the home page of the full-stack application.**
 3. **Allow users to create an account and also give them the option to sign in using a One Time Password (OTP).**
@@ -120,6 +122,23 @@
 [![Namecheap][Namecheap]][Namecheap-url]
 [![WatchModeAPI][WatchModeAPI]][WatchModeAPI-url]
 [![StreamingAvailabilityAPI][StreamingAvailabilityAPI]][StreamingAvailabilityAPI-url]
+
+<p align="right"><a href="#readme-top">Back to top</a></p>
+
+### Database ER-Diagram
+
+<div align="center">
+  <img src="er-diagram.png" alt="ER-Diagram">
+</div>
+
+<p align="right"><a href="#readme-top">Back to top</a></p>
+
+
+### Architecture
+
+<div align="center">
+  <img src="architecture.png" alt="Architecture">
+</div>
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
